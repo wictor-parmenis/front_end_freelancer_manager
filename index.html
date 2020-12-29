@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Spinnaker&display=swap" rel="stylesheet">
+    
+    <title>Freelancer Manager 1.0</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav_bar">
+            <h1 class="logo">Freelancer Manager</h1>
+            <ul>
+                <il><a href="#" >Blog</a></il>
+                <il><a href="#about" >About</a></il>
+                <il><a href="#" >Register</a></il>
+                <il><a href="#" >Login</a></il>
+            </ul>
+        </div>
+        <div class="part_1">
+            <div class="block">
+                <form>
+                    <ul>
+                        <il><h3 class="details_job_h3">Describe details of your job</h3></il>
+                        <il><input class="details_job" type="name" placeholder="Name of job" id="name_job"></il>
+                        <br>
+                        <il><input class="details_job" type="number" placeholder="Revenues (R$)" id="revenues"></il>
+                        <br>
+                        <il><input class="details_job" type="number" placeholder="Expenses (R$)" id="expenses"></il>
+                        <br>
+                        <il><input class="details_job" type="number" placeholder="Time spent (H)" id="time"></il>
+                        <br>
+                        <button class="special_button" onclick="showResults()" type="button">Calculate</button>
+                    </ul>
+                </form>
+            </div>
+            <div id="results"></div>
+        </div>
+        <div class="part_2">
+            <h2 class="title">HOW IT WORKS ?</h2>
+            <div class="steps">
+            <div class="step_1">
+                <h3 class="title_h3">Step 1</h3>
+                <p class="gray_p">Insert your datas in our site.</p>
+            </div>
+            <div class="step_2">
+                <h3 class="title_h3">Step 2</h3>
+                <p class="gray_p">Hold the datas be processed.</p>
+            </div>
+            <div class="step_3">
+                <h3 class="title_h3">Step 3</h3>
+                <p class="gray_p">Receive your relatory of projects for a time determined by you.</p>
+            </div>
+        </div>
+        </div>
+        <div class="part_3" id="about">
+            <h2 class="title">WHO WE ARE ?</h2>
+            <div class="about">
+                <div class="about_1">
+                    <img src="imagens/about__1.jpg" class="img_about">
+                    <h3 class="title_h3">Solver problems</h3>
+                    <p class="gray_p">We analyze the problems and execute the best cost-effective solution.</p>
+                </div>
+                <div class="about_2">
+                    <img src="imagens/about_2.jpg" class="img_about">
+                    <h3 class="title_h3">Build your marketing</h3>
+                    <p class="gray_p">We consider the best tools and has a best team for build your marketing.</p>
+                </div>
+                <div class="about_3">
+                    <img src="imagens/about_3.jpg" class="img_about">
+                    <h3 class="title_h3">High-tech</h3>
+                    <p class="gray_p">We build your site, landing-pages, web-apps and much more.</p>
+                </div>
+            </div>
+        </div>
+        <div class="part_4">
+            <h2 class="title">WHAT CLIENTS SAY ?</h2>
+            <div class="depoiments">
+                <div class="client_1">
+                    <p class="clients_p1">Phasellus eget erat vel dolor consectetur congue at et nibh.</p>
+                    <img src="imagens/client_1.jpg" alt="" class="clients_img">
+                    <h3 class="clients_h3">França Letícia</h3>
+                    <p class="clients_p">Youtuber</p>
+                </div>
+                <div class="client_2">
+                    <p class="clients_p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
+                    <img src="imagens/client_2.jpg" alt="" class="clients_img">
+                    <h3 class="clients_h3">Marcus Oliver</h3>
+                    <p class="clients_p">Co-founder RedixFiles</p>
+                </div>
+            </div>
+        </div>
+        <div class="part_5">
+            <h3 class="social_title">Find us on Social Media</h3>
+            <div class="social_media">
+                <img class="img_1" src="imagens/youtube.png">
+                <img class="img_2" src="imagens/insta.png">
+            </div>
+            
+        </div>
+        <footer>
+            <div class="footer_1">
+                <div class="f1">
+                    <h2 id="logo_footer">Freelancer Manager</h1>
+                        <p class="p_footer">Suspendisse ornare malesuada ex, id interdum nunc auctor eu. Morbi est dolor.</p>
+                </div>
+                <div class="f2">
+                    <h3 id="h3_f2">Contact Us</h3>
+                    <p class="p_footer"><b>Email</b>: wictortec@gmail.com</p>
+                    <br>
+                    <p class="p_footer"><b>WhatsApp</b>: (81) 991021317</p>
+                    <img src="imagens/whatsapp_icon.png" class="icon_footer">
+                    <img src="imagens/message_icon.png" class="icon_footer">
+                    </div>
+                <div class="f3">
+                    <form>
+                        <h3 id="h3_f2">Subscribe newsletter</h3>
+                        <input type="email" placeholder="Your best email" class="input_f3">
+                        <br>
+                        <div class="footer_btn"><a href="#"><b>SUBSCRIBE</b></a></div>
+                        <!--<button class="button_f3"><b>SUBSCRIBE</b></button>-->
+                    </form>
+                </div>
+            </div>
+            <div class="footer_2">
+                <p class="p_footer2">Copyright Wictor Tec&reg;. All rights reserved.</p>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
