@@ -1,0 +1,95 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    --primary-color: #f1f1f1;
+    --secondary-color: #8b8b8b;
+    --tertiary-color: #808080;
+}
+
+
+body{
+    background-color: var(--secondary-color);
+    text-align: center;
+    background-image: url('imagens/wallpaper_5.jpg');
+    background-size: cover;
+
+}
+
+.block_login{
+    padding: 5%;
+    margin-top: 7%;
+    display: inline-block;
+    border-radius: 3%;
+    margin-bottom: 2em;
+    backdrop-filter: blur(15px);   /*Fundo estilo apple */
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo estilo apple */
+}
+
+.title_form{
+    font-family: 'Marcellus SC', serif;
+    font-size: 1.7em;
+    margin-bottom: 20%;
+    border-bottom: black 2px;
+}
+
+
+
+.login_input{
+    padding-top: 0.9em;
+    padding-right: 2.2em;
+    padding-left: 0.3em;
+    margin-bottom: 0.2em;
+    border: var(--secondary-color) solid 1px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+   
+}
+
+
+.login_btn{
+    background-color: #6683da;
+    width: 45%;
+    margin: auto;
+    padding: 2.5%;
+    margin-bottom: 5%;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color);
+    transition-duration: 500ms;
+}
+
+.login_btn:hover{
+    background-color: var(--primary-color);
+    color: #6683da ;
+}
+
+.p_login{
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    transition-duration: 200ms;
+}
+
+.p_login:hover{
+    color: red;
+}
+
+@media (max-width: 500px){
+    body{
+        height: 700px;
+    }
+
+    .title_form{
+        font-size: 1.4em;
+    }
+    .block_login{
+        padding: 8%;
+        margin-top: 20%;
+    }
+
+    .login_input{
+        padding-right: 1em;
+    }
+}
